@@ -8,7 +8,7 @@ resultaterne nedenfor under "Venter på".
 |---|---|---|---|
 | 0 | **Grundlag**: README, AGENTS.md, beslutninger, plan, data (denne PR) | — | Operatøren har læst og godkendt |
 | 1 | **Skelet + atlas-værktøj**: mappestruktur, registret og `concepts.py` med tests fra V2 (`packages/anchor/docs/learning/concepts-2026-10-20/tools/` @ `054a6989c`), CI der kører testene | 0 (afstem først) | 18 tests grønne i CI |
-| 2 | **Data-inventar**: målt oversigt over V2's data (kædens 78 event-typer, TSV, JSONL, DuckDB, commits) som registerfakta med dato og kilde. Ingen data kopieres | 3 | Hver tal kan genmåles med en kommando i PR'en |
+| 2 | **Data- og videnskabsinventar**: målt oversigt over V2's data (kædens 78 event-typer, TSV, JSONL, DuckDB, commits) og al videnskabsdata (`corbell-data/thesis/` 41 filer, `docs/paper`, `.anchor/prereg`). Fejlmønstrene afstemmes: taksonomien med 27 arter fra april (52 + 38 bugs), 46 mønstre fundet 2026-10-20 og operatørens memory-mønstre. Ingen data kopieres | 3 | Hver tal kan genmåles med en kommando i PR'en; hvert fejlmønster har én række med kilde |
 | 3 | **Streng projektbinding** i kernen: præcis ét projekt eller en navngiven afvisning; kontrakt + tests | 2 | RED → GREEN; aldrig fald tilbage til Anchors eget projekt |
 | 4 | **Inventar** (INIT tæller et repo): kind, enhed og nævner pr. kilde; TypeScript tælles som ulæst, ikke som nul; repo uden docs = NO_DOCS, ikke 0,0 | 3 | Kører på en kopi af CertQuest med tal, der kan genmåles |
 | 5 | **TUI-rundtur v0**: læser registret, viser kortet og trinnene; HIL-svar gemmes gennem kernen | 14 (spørgsmål) | Operatøren kan gå rundturen på V2-repoet |

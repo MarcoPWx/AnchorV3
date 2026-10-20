@@ -18,6 +18,7 @@ ny række, der peger på den gamle. Kilde for alle: samtale med operatøren 2026
 | B-010 | **INIT danner overblikket og TUI'en guider dig igennem det** (rundtur med HIL-spørgsmål); kortet kan eksporteres til Sketch som genererede rammer | RETNING | Operatøren: "init fasen skal kunne danne et overblik … og guide dig gennem TUI". Basislinje at slå: håndkørt INIT med 48 agenter, ca. 10,2 mio. tokens, ca. 2 t 20 min |
 | B-011 | **GenAI Academy hører ikke til i V3** (flyttes til CertQuest eller arkiveres) | ÅBEN | Operatøren: "lever bedre sammen med CertQuest". Afgøres af en måling af, hvad der bruges |
 | B-012 | **Om Anchor hjælper, afgøres af et forhåndsregistreret forsøg** (CertQuest, kørt af Codex, parrede arme, uafhængig bedømmer) | RETNING | Operatøren: "meget vigtigt at denne test er scientific" |
+| B-013 | **Alt er versioneret og sporbart, ned til mindste beslutning.** Hvert begreb, hver fakta og hver beslutning har id, version, dato og kilde og linker på tværs: kæde-id, git-sha, Linear-id, Sketch-UUID og draw-id. Anchor Atlas får en **versionsvælger**, så man kan se et begreb, som det så ud på en given dato | RETNING | Operatøren: "ALT, ned til mindste beslutning, er versioneret og traceable across alle knowledge graphs". V2-registret har allerede versioner og trin pr. begreb (`concepts.py`), men 24 af 49 versioner manglede spor |
 
 ## Åbne fra den flettede roadmap
 
