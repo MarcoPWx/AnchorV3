@@ -1,0 +1,24 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install pytest
+      - name: Tests
+        run: python -m pytest -q
+      - name: Contract versions (B-014)
+        if: github.event_name == 'pull_request'
+        run: python tools/check_contracts.py --base "origin/${{ github.base_ref }}"
