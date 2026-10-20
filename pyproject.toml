@@ -1,0 +1,13 @@
+[project]
+name = "anchor"
+version = "0.0.1"
+description = "Anchor V3: the agent gets the right sources, you can see what it did and whether it holds, and work continues tomorrow."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

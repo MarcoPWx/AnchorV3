@@ -1,0 +1,31 @@
+{
+ "id": "scdd",
+ "version": "0.1",
+ "status": "Proposed",
+ "title": "SCDD: hvad Anchor lover i hver fase af arbejdet",
+ "summary": "Fire faser, DEFINE, VERIFY, PROMOTE og GOVERN, hver med det, Anchor skal give agenten og dig i netop den fase. Version 0.1 fastholder løfterne fra V2 og hvor meget V2 faktisk leverede; hvordan fasen afgøres, er åbent.",
+ "body": {
+  "phases": [
+   {"id": "DEFINE", "promise": "Relevant viden for opgaven: kilder, beslægtede ADR'er og kendte fejl i berørt kode", "v2_delivered": "0 af 3"},
+   {"id": "VERIFY", "promise": "Hændelser på kæden, bevisdomme, vogter-domme og forståelsesmål", "v2_delivered": "2 af 4, plus 1 delvist"},
+   {"id": "PROMOTE", "promise": "Forskel siden sidst, status på porte, negativt rum og berørt kode", "v2_delivered": "2 af 4"},
+   {"id": "GOVERN", "promise": "Forældet viden, afdrift fra regler, forældede påstande og afvigelser", "v2_delivered": "3 af 4, plus 1 delvist"}
+  ],
+  "rules": [
+   "Et løfte gælder først, når en test viser, at det når agenten i den rigtige fase.",
+   "Signaler vises på beslutningstidspunktet, højst tre ad gangen (B-008)."
+  ],
+  "open": [
+   "Hvordan afgøres fasen? I V2 har feltet scdd_phase 0 forbrugere i produktionen, og intet styrer efter fase."
+  ]
+ },
+ "adr": ["ADR-0001"],
+ "implements": [],
+ "tests": [],
+ "provenance": [
+  {"source": "V2 packages/anchor/CLAUDE.md, afsnit 16 SCDD / Octopus, inkl. AS-BUILT-noten SCDD_DEFINE0", "sha": "054a6989c", "rung": "RELAYED"}
+ ],
+ "changelog": [
+  {"version": "0.1", "date": "2026-10-20", "change": "Første version: de fire faser, deres løfter og hvad V2 leverede", "pr": "PR 1"}
+ ]
+}
