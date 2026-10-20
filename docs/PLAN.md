@@ -7,7 +7,7 @@ resultaterne nedenfor under "Venter på".
 | PR | Indhold | Bid | Færdig når |
 |---|---|---|---|
 | 0 | **Grundlag**: README, AGENTS.md, beslutninger, plan, data (denne PR) | — | Operatøren har læst og godkendt |
-| 1 | **Skelet + atlas-værktøj**: mappestruktur, registret og `concepts.py` med tests fra V2 (`packages/anchor/docs/learning/concepts-2026-10-20/tools/` @ `054a6989c`), CI der kører testene | 0 (afstem først) | 18 tests grønne i CI |
+| 1 | **Skelet + kontrakt- og ADR-katalog** (B-014): `contracts/` med version, status, changelog, tests og implementerende kode pr. kontrakt; `docs/adr/`; en Atlas-generator der kører ved merge; et CI-tjek der fejler, hvis en PR ændrer en kontrakt uden at hæve versionen. Fra V2 genbruges mappestruktur, registret og `concepts.py` med tests fra V2 (delt i definitioner → Atlas og tilstand → TUI) (`packages/anchor/docs/learning/concepts-2026-10-20/tools/` @ `054a6989c`), CI der kører testene | 0 (afstem først) | 18 tests grønne i CI |
 | 2 | **Data- og videnskabsinventar**: målt oversigt over V2's data (kædens 78 event-typer, TSV, JSONL, DuckDB, commits) og al videnskabsdata (`corbell-data/thesis/` 41 filer, `docs/paper`, `.anchor/prereg`). Fejlmønstrene afstemmes: taksonomien med 27 arter fra april (52 + 38 bugs), 46 mønstre fundet 2026-10-20 og operatørens memory-mønstre. Ingen data kopieres | 3 | Hver tal kan genmåles med en kommando i PR'en; hvert fejlmønster har én række med kilde |
 | 3 | **Streng projektbinding** i kernen: præcis ét projekt eller en navngiven afvisning; kontrakt + tests | 2 | RED → GREEN; aldrig fald tilbage til Anchors eget projekt |
 | 4 | **Inventar** (INIT tæller et repo): kind, enhed og nævner pr. kilde; TypeScript tælles som ulæst, ikke som nul; repo uden docs = NO_DOCS, ikke 0,0 | 3 | Kører på en kopi af CertQuest med tal, der kan genmåles |
@@ -34,3 +34,7 @@ der bliver til noget. Det er samme sløjfe, der fandt 8 nye begreber i Sketch-do
 - Forslag om ubesøgte begreber, Docker-historien, genbrug fra GenAI Academy og et udkast til PR-plan.
 - CertQuest-forsøgets forhåndsregistrering (PREREG, PROTOCOL, HANDOFF-CODEX).
 - Harness engineering-sammenligningen (Claude Code, Codex, Pi, DeepSeek) og lektioner til V3.
+
+## Atlas efter B-014
+
+De 29 HTML-sider fra 2026-10-20 (V2 `054a6989c` + senere) fryses som **Atlas v0**, et dateret øjebliksbillede. De vedligeholdes ikke længere i hånden; de 51 Sketch-berigelser udskydes (genåbnes, når en ADR eller kontrakt har brug for dem). Fremover opstår en Atlas-side kun, når en PR indfører eller ændrer en ADR eller kontrakt. De 115 spredte `anchor.*.vN`-skemaer i V2 er råmaterialet til kontraktkataloget.
